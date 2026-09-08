@@ -23,6 +23,19 @@
 shasum -a 256 -c LocalPIISanitizer-<版本>-arm64.dmg.sha256
 ```
 
+### 国内加速下载（GitHub 打不开 / 太慢时）
+
+以下为当前版本安装包的加速直链，点不开的线路直接换下一条（第三方公共服务，2026-09-08 实测均可达）：
+
+- [加速线路 1：ghfast.top](https://ghfast.top/https://github.com/halfmoon82/local-pii-sanitizer-releases/releases/download/v5.0.0/LocalPIISanitizer-5.0.0-arm64.dmg)
+- [加速线路 2：gh-proxy.com](https://gh-proxy.com/https://github.com/halfmoon82/local-pii-sanitizer-releases/releases/download/v5.0.0/LocalPIISanitizer-5.0.0-arm64.dmg)
+- [加速线路 3：ghproxy.net](https://ghproxy.net/https://github.com/halfmoon82/local-pii-sanitizer-releases/releases/download/v5.0.0/LocalPIISanitizer-5.0.0-arm64.dmg)
+
+加速链路经过第三方服务器中转，下载完成后**请务必核对哈希**，确认文件与 GitHub 官方包完全一致：
+
+1. 下载 [LocalPIISanitizer-5.0.0-arm64.dmg.sha256](https://ghfast.top/https://github.com/halfmoon82/local-pii-sanitizer-releases/releases/download/v5.0.0/LocalPIISanitizer-5.0.0-arm64.dmg.sha256)，与 dmg 放在同一文件夹；
+2. 在该文件夹打开终端，执行 `shasum -a 256 -c LocalPIISanitizer-5.0.0-arm64.dmg.sha256`，输出 `OK` 即官方原版，可放心安装；任何其它输出都请不要使用该文件。
+
 ## 三步安装
 
 1. 双击 dmg，把 **本地脱敏 Agent 企业版** 图标拖到旁边的「应用程序」文件夹。
