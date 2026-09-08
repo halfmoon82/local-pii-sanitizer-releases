@@ -18,7 +18,9 @@
 
 不确定自己的芯片：点左上角  → 关于本机，「芯片」一栏写 Apple 即选 arm64。
 
-**关于 Windows 版**：这是 Windows 首个版本，已通过自动化构建与启动自检，但**尚未在真实 Windows 电脑上做完整验收**，可能存在我们还没发现的问题，建议先小范围试用。安装包未做代码签名，双击时 Windows SmartScreen 会提示「已阻止未识别的应用」，点「更多信息」→「仍要运行」即可继续。Windows 版还原只输出 Word（docx），不出 PDF。
+**关于 Windows 版**：这是 Windows 早期版本，已在真实 Windows 电脑上验证过安装与启动，但覆盖面还不如 macOS 版广，建议先小范围试用。安装包未做代码签名，双击时 Windows SmartScreen 会提示「已阻止未识别的应用」，点「更多信息」→「仍要运行」即可继续。Windows 版还原只输出 Word（docx），不出 PDF。
+
+> 如果你下载过 5.1.0 的 Windows 包：那一版启动会报 `Unable to configure formatter 'default'` 并直接退出，已下架。请下载 5.1.1 或更高版本（上面的直链始终指向最新版）。macOS 的 5.1.0 不受影响。
 
 每个安装包旁边都有同名的 `.sha256` 文件，用于核对下载是否完整（可选）：
 
