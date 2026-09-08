@@ -28,25 +28,25 @@ shasum -a 256 -c LocalPIISanitizer-<版本>-arm64.dmg.sha256
 
 ### 国内加速下载（GitHub 打不开 / 太慢时）
 
-以下为当前版本（5.1.0）安装包的加速直链，点不开的线路直接换下一条（第三方公共服务，2026-09-08 实测均可达）：
+以下直链**始终指向最新版本**（经 `releases/latest/download/` 跳转，发新版无需更换），点不开的线路直接换下一条（第三方公共服务，2026-09-08 实测均可达）：
 
 **macOS（Apple Silicon）**
 
-- [加速线路 1：ghfast.top](https://ghfast.top/https://github.com/halfmoon82/local-pii-sanitizer-releases/releases/download/v5.1.0/LocalPIISanitizer-5.1.0-arm64.dmg)
-- [加速线路 2：gh-proxy.com](https://gh-proxy.com/https://github.com/halfmoon82/local-pii-sanitizer-releases/releases/download/v5.1.0/LocalPIISanitizer-5.1.0-arm64.dmg)
-- [加速线路 3：ghproxy.net](https://ghproxy.net/https://github.com/halfmoon82/local-pii-sanitizer-releases/releases/download/v5.1.0/LocalPIISanitizer-5.1.0-arm64.dmg)
+- [加速线路 1：ghfast.top](https://ghfast.top/https://github.com/halfmoon82/local-pii-sanitizer-releases/releases/latest/download/LocalPIISanitizer-arm64.dmg)
+- [加速线路 2：gh-proxy.com](https://gh-proxy.com/https://github.com/halfmoon82/local-pii-sanitizer-releases/releases/latest/download/LocalPIISanitizer-arm64.dmg)
+- [加速线路 3：ghproxy.net](https://ghproxy.net/https://github.com/halfmoon82/local-pii-sanitizer-releases/releases/latest/download/LocalPIISanitizer-arm64.dmg)
 
 **Windows（64 位）**
 
-- [加速线路 1：ghfast.top](https://ghfast.top/https://github.com/halfmoon82/local-pii-sanitizer-releases/releases/download/v5.1.0/LocalPIISanitizer-5.1.0-win-x64-Setup.exe)
-- [加速线路 2：gh-proxy.com](https://gh-proxy.com/https://github.com/halfmoon82/local-pii-sanitizer-releases/releases/download/v5.1.0/LocalPIISanitizer-5.1.0-win-x64-Setup.exe)
-- [加速线路 3：ghproxy.net](https://ghproxy.net/https://github.com/halfmoon82/local-pii-sanitizer-releases/releases/download/v5.1.0/LocalPIISanitizer-5.1.0-win-x64-Setup.exe)
+- [加速线路 1：ghfast.top](https://ghfast.top/https://github.com/halfmoon82/local-pii-sanitizer-releases/releases/latest/download/LocalPIISanitizer-win-x64-Setup.exe)
+- [加速线路 2：gh-proxy.com](https://gh-proxy.com/https://github.com/halfmoon82/local-pii-sanitizer-releases/releases/latest/download/LocalPIISanitizer-win-x64-Setup.exe)
+- [加速线路 3：ghproxy.net](https://ghproxy.net/https://github.com/halfmoon82/local-pii-sanitizer-releases/releases/latest/download/LocalPIISanitizer-win-x64-Setup.exe)
 
 加速链路经过第三方服务器中转，下载完成后**请务必核对哈希**，确认文件与 GitHub 官方包完全一致：
 
-1. 下载安装包对应的 `.sha256` 文件（把上面直链末尾加上 `.sha256` 即可），与安装包放在同一文件夹；
-2. macOS：在该文件夹打开终端，执行 `shasum -a 256 -c LocalPIISanitizer-5.1.0-arm64.dmg.sha256`，输出 `OK` 即官方原版，可放心安装；
-3. Windows：在该文件夹打开 PowerShell，执行 `Get-FileHash .\LocalPIISanitizer-5.1.0-win-x64-Setup.exe -Algorithm SHA256`，把输出的哈希与 `.sha256` 文件里的字符串比对，一致即官方原版；
+1. 下载安装包对应的 `.sha256` 文件（把上面直链末尾的 `.dmg` / `.exe` 换成 `.dmg.sha256` / `.exe.sha256` 即可），与安装包放在同一文件夹；
+2. macOS：在该文件夹打开终端，执行 `shasum -a 256 -c LocalPIISanitizer-arm64.dmg.sha256`，输出 `OK` 即官方原版，可放心安装；
+3. Windows：在该文件夹打开 PowerShell，执行 `Get-FileHash .\LocalPIISanitizer-win-x64-Setup.exe -Algorithm SHA256`，把输出的哈希与 `.sha256` 文件里的字符串比对，一致即官方原版；
 4. 任何不一致或其它输出，都请不要使用该文件。
 
 ## 三步安装（macOS）
